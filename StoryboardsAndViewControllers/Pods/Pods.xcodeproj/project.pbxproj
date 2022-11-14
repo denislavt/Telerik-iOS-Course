@@ -1,0 +1,694 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0CC09F5FF8CED0B89F799C02973523E9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		0D417B6BE23C569B32F7D2F4E0D3242C /* PresentrShadow.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE2CFB8BA50E8AC2E41112025BF05C5E /* PresentrShadow.swift */; };
+		134F6BB89F7E3621ACF8421FEF002199 /* Montserrat-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0BD71F2531BBB33D053A0515C4074554 /* Montserrat-Regular.ttf */; };
+		14C9966C75A38B295E40C4625340F6FF /* KeyboardTranslation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B00BAC33AE4E639074D78A905A211FA4 /* KeyboardTranslation.swift */; };
+		1A26DD2353C377D09DF3B47041ED4801 /* Presentr-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 736098FB49A451B474C962DEEE65C01B /* Presentr-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		201F09778D6719F515BC30136306EF36 /* TransitionType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BBB57B88FBE36DFDE151AD06E0028EC /* TransitionType.swift */; };
+		207593290C5587481C4905DBF87AF657 /* Presentr-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E9EA0C457BE76BD77A3F65781D04534 /* Presentr-dummy.m */; };
+		20A4D1C3509DBEC8D32AECEEB6C39B7F /* Presentr+Equatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F63E08A2399AE5FFE322C2E7BF14D6D /* Presentr+Equatable.swift */; };
+		361BE4030886947F02F0E1255A3CDA3C /* Pods-StoryboardsAndViewControllers-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 6E39F708A8B5CE3514FDC20A09C7234C /* Pods-StoryboardsAndViewControllers-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3B14DC00D0297FD357C1796B878B3DB5 /* BackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34F2489CA27216D5F33E7E93AF76544D /* BackgroundView.swift */; };
+		41EDE7930AEB212A96EF262F324A4063 /* CoverFromCornerAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5188D07DF29514DE733D37EB9B99F919 /* CoverFromCornerAnimation.swift */; };
+		4C5643AE8277B6CF56F41D544B509BD3 /* PresentrAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEB42CC47C46506B61CDEC064E996EC4 /* PresentrAnimation.swift */; };
+		5B55F03FF09EABA9EF8CEBB43C472114 /* CoverVerticalAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54CA94709DEF12A13DFEA9E773DD53E7 /* CoverVerticalAnimation.swift */; };
+		650C4F0B783A316DB22D0776E7B03367 /* CoverHorizontalAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEC0CB8588BAE1753123817DCA9DE344 /* CoverHorizontalAnimation.swift */; };
+		7D8C9B26847D227148BCDBFB2050D328 /* FlipHorizontalAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = E06D61D322F82E3B212793E617585AF9 /* FlipHorizontalAnimation.swift */; };
+		821FF06D50C71EB0855DF01BBB9FD0CE /* ModalSize.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D9390E172A54F13B345B5131E11F3ED /* ModalSize.swift */; };
+		8CFC635509ACFEC7FCEC7127553F6A05 /* ModalCenterPosition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39386EB7A1E9D96E650FFE01849FC7BE /* ModalCenterPosition.swift */; };
+		9367926ED3B3C27D916EFEEB677E7E96 /* CoverVerticalFromTopAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = F284335A70D80169E19D6AD0DDB54B58 /* CoverVerticalFromTopAnimation.swift */; };
+		94B61E63CC631AEE9A48D4DA0B6E5508 /* Pods-StoryboardsAndViewControllers-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A8146A74C4A2AE1ED8DCEDB4A775E13B /* Pods-StoryboardsAndViewControllers-dummy.m */; };
+		9713D0CFFE57995AD3B2C1A5EC655BAE /* CrossDissolveAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5493F28018BA7E068E764B8602D2EB6 /* CrossDissolveAnimation.swift */; };
+		ADEBF21E113FDABB1094F748C4278A3F /* AlertViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E55A40CCAF2BC114486B2893B457F7EF /* AlertViewController.swift */; };
+		AE7A37125A4E80305D09F0D64965EAD2 /* Presentr.swift in Sources */ = {isa = PBXBuildFile; fileRef = 313EDAE049A6FC8B7C12A09F6D4A8130 /* Presentr.swift */; };
+		DEE1462383DC4D8431B3808D9FD0EE06 /* PresentationType.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7F28FEE7E170B7DBDA0F8D4FE9BDD39 /* PresentationType.swift */; };
+		E176D1526FCA0696D58D504B0027A8BE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		F2F50798C6672057582544FD912F00B0 /* PresentrController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5DDAD83622522B68AB93B33B6280480 /* PresentrController.swift */; };
+		F5D6FF671B6B460B0D1E4088090EEC93 /* AlertViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 45166D2B7659CCAD4DE13F918B4722F1 /* AlertViewController.xib */; };
+		FA427B99A386B0665D4F6FF63668A9AA /* SourceSansPro-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 18BAFA28B1AF6543199C788DCB92221E /* SourceSansPro-Regular.ttf */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B4068C8CEF777B6CA6A97860A7E23472 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 433F79D5F3953F8EA8E7B0C7A2A27D32;
+			remoteInfo = Presentr;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0BD71F2531BBB33D053A0515C4074554 /* Montserrat-Regular.ttf */ = {isa = PBXFileReference; includeInIndex = 1; name = "Montserrat-Regular.ttf"; path = "Presentr/Montserrat-Regular.ttf"; sourceTree = "<group>"; };
+		16C229E8E10DDDCA096C8E0A18FC926B /* Pods-StoryboardsAndViewControllers */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-StoryboardsAndViewControllers"; path = Pods_StoryboardsAndViewControllers.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		182CB281FBC245D9709B360E9FA4E00C /* Presentr */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Presentr; path = Presentr.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		18BAFA28B1AF6543199C788DCB92221E /* SourceSansPro-Regular.ttf */ = {isa = PBXFileReference; includeInIndex = 1; name = "SourceSansPro-Regular.ttf"; path = "Presentr/SourceSansPro-Regular.ttf"; sourceTree = "<group>"; };
+		1E9EA0C457BE76BD77A3F65781D04534 /* Presentr-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Presentr-dummy.m"; sourceTree = "<group>"; };
+		2B760A82EEED49EFAA409A07468DF848 /* Pods-StoryboardsAndViewControllers-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-StoryboardsAndViewControllers-acknowledgements.markdown"; sourceTree = "<group>"; };
+		313EDAE049A6FC8B7C12A09F6D4A8130 /* Presentr.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Presentr.swift; path = Presentr/Presentr.swift; sourceTree = "<group>"; };
+		34F2489CA27216D5F33E7E93AF76544D /* BackgroundView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BackgroundView.swift; path = Presentr/BackgroundView.swift; sourceTree = "<group>"; };
+		39386EB7A1E9D96E650FFE01849FC7BE /* ModalCenterPosition.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ModalCenterPosition.swift; path = Presentr/ModalCenterPosition.swift; sourceTree = "<group>"; };
+		3B8887368E1B55567C34FE37C069EF35 /* Presentr-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Presentr-prefix.pch"; sourceTree = "<group>"; };
+		45166D2B7659CCAD4DE13F918B4722F1 /* AlertViewController.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = AlertViewController.xib; path = Presentr/AlertViewController.xib; sourceTree = "<group>"; };
+		455CC2B1CE5278EE915493D4DE738ECE /* Presentr.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Presentr.modulemap; sourceTree = "<group>"; };
+		4F63E08A2399AE5FFE322C2E7BF14D6D /* Presentr+Equatable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Presentr+Equatable.swift"; path = "Presentr/Presentr+Equatable.swift"; sourceTree = "<group>"; };
+		5188D07DF29514DE733D37EB9B99F919 /* CoverFromCornerAnimation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CoverFromCornerAnimation.swift; path = Presentr/CoverFromCornerAnimation.swift; sourceTree = "<group>"; };
+		54CA94709DEF12A13DFEA9E773DD53E7 /* CoverVerticalAnimation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CoverVerticalAnimation.swift; path = Presentr/CoverVerticalAnimation.swift; sourceTree = "<group>"; };
+		58A86C7959BDA4D695257741FC65D967 /* Pods-StoryboardsAndViewControllers.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-StoryboardsAndViewControllers.release.xcconfig"; sourceTree = "<group>"; };
+		5A23D9161138043641737AF67F9EBA71 /* Presentr.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Presentr.debug.xcconfig; sourceTree = "<group>"; };
+		6E39F708A8B5CE3514FDC20A09C7234C /* Pods-StoryboardsAndViewControllers-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-StoryboardsAndViewControllers-umbrella.h"; sourceTree = "<group>"; };
+		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		736098FB49A451B474C962DEEE65C01B /* Presentr-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Presentr-umbrella.h"; sourceTree = "<group>"; };
+		8BBB57B88FBE36DFDE151AD06E0028EC /* TransitionType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TransitionType.swift; path = Presentr/TransitionType.swift; sourceTree = "<group>"; };
+		8F3D3A9FAFBF471BF0FDBBE4DC426C8F /* Pods-StoryboardsAndViewControllers-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-StoryboardsAndViewControllers-Info.plist"; sourceTree = "<group>"; };
+		9805F50EDBBE9C3B0AA1975F969365BA /* Pods-StoryboardsAndViewControllers.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-StoryboardsAndViewControllers.debug.xcconfig"; sourceTree = "<group>"; };
+		9947D340370BD766BEFE2B1ECD88EC1E /* Pods-StoryboardsAndViewControllers.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-StoryboardsAndViewControllers.modulemap"; sourceTree = "<group>"; };
+		9B1031C2E1B38557694C88A950E7099D /* Presentr.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Presentr.release.xcconfig; sourceTree = "<group>"; };
+		9D9390E172A54F13B345B5131E11F3ED /* ModalSize.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ModalSize.swift; path = Presentr/ModalSize.swift; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A8146A74C4A2AE1ED8DCEDB4A775E13B /* Pods-StoryboardsAndViewControllers-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-StoryboardsAndViewControllers-dummy.m"; sourceTree = "<group>"; };
+		AD1261389CB6584E95CD8790D98DB215 /* Presentr-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Presentr-Info.plist"; sourceTree = "<group>"; };
+		AEB42CC47C46506B61CDEC064E996EC4 /* PresentrAnimation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PresentrAnimation.swift; path = Presentr/PresentrAnimation.swift; sourceTree = "<group>"; };
+		B00BAC33AE4E639074D78A905A211FA4 /* KeyboardTranslation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KeyboardTranslation.swift; path = Presentr/KeyboardTranslation.swift; sourceTree = "<group>"; };
+		B7F28FEE7E170B7DBDA0F8D4FE9BDD39 /* PresentationType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PresentationType.swift; path = Presentr/PresentationType.swift; sourceTree = "<group>"; };
+		BC1EF1824966E63867E5A282D55129DC /* Pods-StoryboardsAndViewControllers-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-StoryboardsAndViewControllers-frameworks.sh"; sourceTree = "<group>"; };
+		C5493F28018BA7E068E764B8602D2EB6 /* CrossDissolveAnimation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CrossDissolveAnimation.swift; path = Presentr/CrossDissolveAnimation.swift; sourceTree = "<group>"; };
+		C5DDAD83622522B68AB93B33B6280480 /* PresentrController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PresentrController.swift; path = Presentr/PresentrController.swift; sourceTree = "<group>"; };
+		DE2CFB8BA50E8AC2E41112025BF05C5E /* PresentrShadow.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PresentrShadow.swift; path = Presentr/PresentrShadow.swift; sourceTree = "<group>"; };
+		E06D61D322F82E3B212793E617585AF9 /* FlipHorizontalAnimation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FlipHorizontalAnimation.swift; path = Presentr/FlipHorizontalAnimation.swift; sourceTree = "<group>"; };
+		E55A40CCAF2BC114486B2893B457F7EF /* AlertViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AlertViewController.swift; path = Presentr/AlertViewController.swift; sourceTree = "<group>"; };
+		EABEEFC090D7A24A180D8253A5435AF3 /* Pods-StoryboardsAndViewControllers-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-StoryboardsAndViewControllers-acknowledgements.plist"; sourceTree = "<group>"; };
+		F284335A70D80169E19D6AD0DDB54B58 /* CoverVerticalFromTopAnimation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CoverVerticalFromTopAnimation.swift; path = Presentr/CoverVerticalFromTopAnimation.swift; sourceTree = "<group>"; };
+		FEC0CB8588BAE1753123817DCA9DE344 /* CoverHorizontalAnimation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CoverHorizontalAnimation.swift; path = Presentr/CoverHorizontalAnimation.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2BAB6D475E32DECFE7AA5B0F2C623A1A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0CC09F5FF8CED0B89F799C02973523E9 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9DE3AB664F65858F2350742D0A1F143C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E176D1526FCA0696D58D504B0027A8BE /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3432D624BFB86286B7A59C9078EA89D7 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				455CC2B1CE5278EE915493D4DE738ECE /* Presentr.modulemap */,
+				1E9EA0C457BE76BD77A3F65781D04534 /* Presentr-dummy.m */,
+				AD1261389CB6584E95CD8790D98DB215 /* Presentr-Info.plist */,
+				3B8887368E1B55567C34FE37C069EF35 /* Presentr-prefix.pch */,
+				736098FB49A451B474C962DEEE65C01B /* Presentr-umbrella.h */,
+				5A23D9161138043641737AF67F9EBA71 /* Presentr.debug.xcconfig */,
+				9B1031C2E1B38557694C88A950E7099D /* Presentr.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Presentr";
+			sourceTree = "<group>";
+		};
+		4164C71E37786E5E2691583C93736B0C /* Pods-StoryboardsAndViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				9947D340370BD766BEFE2B1ECD88EC1E /* Pods-StoryboardsAndViewControllers.modulemap */,
+				2B760A82EEED49EFAA409A07468DF848 /* Pods-StoryboardsAndViewControllers-acknowledgements.markdown */,
+				EABEEFC090D7A24A180D8253A5435AF3 /* Pods-StoryboardsAndViewControllers-acknowledgements.plist */,
+				A8146A74C4A2AE1ED8DCEDB4A775E13B /* Pods-StoryboardsAndViewControllers-dummy.m */,
+				BC1EF1824966E63867E5A282D55129DC /* Pods-StoryboardsAndViewControllers-frameworks.sh */,
+				8F3D3A9FAFBF471BF0FDBBE4DC426C8F /* Pods-StoryboardsAndViewControllers-Info.plist */,
+				6E39F708A8B5CE3514FDC20A09C7234C /* Pods-StoryboardsAndViewControllers-umbrella.h */,
+				9805F50EDBBE9C3B0AA1975F969365BA /* Pods-StoryboardsAndViewControllers.debug.xcconfig */,
+				58A86C7959BDA4D695257741FC65D967 /* Pods-StoryboardsAndViewControllers.release.xcconfig */,
+			);
+			name = "Pods-StoryboardsAndViewControllers";
+			path = "Target Support Files/Pods-StoryboardsAndViewControllers";
+			sourceTree = "<group>";
+		};
+		578452D2E740E91742655AC8F1636D1F /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		6923515B6E9A43600EEDB55557225F2C /* Presentr */ = {
+			isa = PBXGroup;
+			children = (
+				E55A40CCAF2BC114486B2893B457F7EF /* AlertViewController.swift */,
+				34F2489CA27216D5F33E7E93AF76544D /* BackgroundView.swift */,
+				5188D07DF29514DE733D37EB9B99F919 /* CoverFromCornerAnimation.swift */,
+				FEC0CB8588BAE1753123817DCA9DE344 /* CoverHorizontalAnimation.swift */,
+				54CA94709DEF12A13DFEA9E773DD53E7 /* CoverVerticalAnimation.swift */,
+				F284335A70D80169E19D6AD0DDB54B58 /* CoverVerticalFromTopAnimation.swift */,
+				C5493F28018BA7E068E764B8602D2EB6 /* CrossDissolveAnimation.swift */,
+				E06D61D322F82E3B212793E617585AF9 /* FlipHorizontalAnimation.swift */,
+				B00BAC33AE4E639074D78A905A211FA4 /* KeyboardTranslation.swift */,
+				39386EB7A1E9D96E650FFE01849FC7BE /* ModalCenterPosition.swift */,
+				9D9390E172A54F13B345B5131E11F3ED /* ModalSize.swift */,
+				B7F28FEE7E170B7DBDA0F8D4FE9BDD39 /* PresentationType.swift */,
+				313EDAE049A6FC8B7C12A09F6D4A8130 /* Presentr.swift */,
+				4F63E08A2399AE5FFE322C2E7BF14D6D /* Presentr+Equatable.swift */,
+				AEB42CC47C46506B61CDEC064E996EC4 /* PresentrAnimation.swift */,
+				C5DDAD83622522B68AB93B33B6280480 /* PresentrController.swift */,
+				DE2CFB8BA50E8AC2E41112025BF05C5E /* PresentrShadow.swift */,
+				8BBB57B88FBE36DFDE151AD06E0028EC /* TransitionType.swift */,
+				90732BBAA42DCAD68A0DBC32BBA53726 /* Resources */,
+				3432D624BFB86286B7A59C9078EA89D7 /* Support Files */,
+			);
+			name = Presentr;
+			path = Presentr;
+			sourceTree = "<group>";
+		};
+		7571DBB86859636666D968052647CA72 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				16C229E8E10DDDCA096C8E0A18FC926B /* Pods-StoryboardsAndViewControllers */,
+				182CB281FBC245D9709B360E9FA4E00C /* Presentr */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		90732BBAA42DCAD68A0DBC32BBA53726 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				45166D2B7659CCAD4DE13F918B4722F1 /* AlertViewController.xib */,
+				0BD71F2531BBB33D053A0515C4074554 /* Montserrat-Regular.ttf */,
+				18BAFA28B1AF6543199C788DCB92221E /* SourceSansPro-Regular.ttf */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
+				F28372319DF68C94071F00F9C57FDE7F /* Pods */,
+				7571DBB86859636666D968052647CA72 /* Products */,
+				DE85034B2CDD3701B8F40AA492499F28 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				578452D2E740E91742655AC8F1636D1F /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DE85034B2CDD3701B8F40AA492499F28 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				4164C71E37786E5E2691583C93736B0C /* Pods-StoryboardsAndViewControllers */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		F28372319DF68C94071F00F9C57FDE7F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6923515B6E9A43600EEDB55557225F2C /* Presentr */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		60BF2DE4D64E49DCB02F3831B0CA11A3 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1A26DD2353C377D09DF3B47041ED4801 /* Presentr-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		64CEE4E1DB73357767FF950F5B589DCB /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				361BE4030886947F02F0E1255A3CDA3C /* Pods-StoryboardsAndViewControllers-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		433F79D5F3953F8EA8E7B0C7A2A27D32 /* Presentr */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 007113D407F2DBADACBA23E0D40E73CE /* Build configuration list for PBXNativeTarget "Presentr" */;
+			buildPhases = (
+				60BF2DE4D64E49DCB02F3831B0CA11A3 /* Headers */,
+				30504AC601E40BFDB79A5D0D31B6D65B /* Sources */,
+				9DE3AB664F65858F2350742D0A1F143C /* Frameworks */,
+				BA96CB2E912189F83EE19ECE202488DE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Presentr;
+			productName = Presentr;
+			productReference = 182CB281FBC245D9709B360E9FA4E00C /* Presentr */;
+			productType = "com.apple.product-type.framework";
+		};
+		C63E975ABFDB68213269DF590011F8EE /* Pods-StoryboardsAndViewControllers */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6E8495E2A9FCE37934270EF513A53308 /* Build configuration list for PBXNativeTarget "Pods-StoryboardsAndViewControllers" */;
+			buildPhases = (
+				64CEE4E1DB73357767FF950F5B589DCB /* Headers */,
+				482A7D9937751897EB2495F6BDEAEABC /* Sources */,
+				2BAB6D475E32DECFE7AA5B0F2C623A1A /* Frameworks */,
+				DD557938D20BA2FD19BBFF88F58CEE84 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2938D1B429B45DBC59796EB827A3D379 /* PBXTargetDependency */,
+			);
+			name = "Pods-StoryboardsAndViewControllers";
+			productName = Pods_StoryboardsAndViewControllers;
+			productReference = 16C229E8E10DDDCA096C8E0A18FC926B /* Pods-StoryboardsAndViewControllers */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1300;
+				LastUpgradeCheck = 1300;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = 7571DBB86859636666D968052647CA72 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C63E975ABFDB68213269DF590011F8EE /* Pods-StoryboardsAndViewControllers */,
+				433F79D5F3953F8EA8E7B0C7A2A27D32 /* Presentr */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BA96CB2E912189F83EE19ECE202488DE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F5D6FF671B6B460B0D1E4088090EEC93 /* AlertViewController.xib in Resources */,
+				134F6BB89F7E3621ACF8421FEF002199 /* Montserrat-Regular.ttf in Resources */,
+				FA427B99A386B0665D4F6FF63668A9AA /* SourceSansPro-Regular.ttf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DD557938D20BA2FD19BBFF88F58CEE84 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		30504AC601E40BFDB79A5D0D31B6D65B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ADEBF21E113FDABB1094F748C4278A3F /* AlertViewController.swift in Sources */,
+				3B14DC00D0297FD357C1796B878B3DB5 /* BackgroundView.swift in Sources */,
+				41EDE7930AEB212A96EF262F324A4063 /* CoverFromCornerAnimation.swift in Sources */,
+				650C4F0B783A316DB22D0776E7B03367 /* CoverHorizontalAnimation.swift in Sources */,
+				5B55F03FF09EABA9EF8CEBB43C472114 /* CoverVerticalAnimation.swift in Sources */,
+				9367926ED3B3C27D916EFEEB677E7E96 /* CoverVerticalFromTopAnimation.swift in Sources */,
+				9713D0CFFE57995AD3B2C1A5EC655BAE /* CrossDissolveAnimation.swift in Sources */,
+				7D8C9B26847D227148BCDBFB2050D328 /* FlipHorizontalAnimation.swift in Sources */,
+				14C9966C75A38B295E40C4625340F6FF /* KeyboardTranslation.swift in Sources */,
+				8CFC635509ACFEC7FCEC7127553F6A05 /* ModalCenterPosition.swift in Sources */,
+				821FF06D50C71EB0855DF01BBB9FD0CE /* ModalSize.swift in Sources */,
+				DEE1462383DC4D8431B3808D9FD0EE06 /* PresentationType.swift in Sources */,
+				AE7A37125A4E80305D09F0D64965EAD2 /* Presentr.swift in Sources */,
+				20A4D1C3509DBEC8D32AECEEB6C39B7F /* Presentr+Equatable.swift in Sources */,
+				207593290C5587481C4905DBF87AF657 /* Presentr-dummy.m in Sources */,
+				4C5643AE8277B6CF56F41D544B509BD3 /* PresentrAnimation.swift in Sources */,
+				F2F50798C6672057582544FD912F00B0 /* PresentrController.swift in Sources */,
+				0D417B6BE23C569B32F7D2F4E0D3242C /* PresentrShadow.swift in Sources */,
+				201F09778D6719F515BC30136306EF36 /* TransitionType.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		482A7D9937751897EB2495F6BDEAEABC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				94B61E63CC631AEE9A48D4DA0B6E5508 /* Pods-StoryboardsAndViewControllers-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2938D1B429B45DBC59796EB827A3D379 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Presentr;
+			target = 433F79D5F3953F8EA8E7B0C7A2A27D32 /* Presentr */;
+			targetProxy = B4068C8CEF777B6CA6A97860A7E23472 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		45285987FDC204B9DB7C0228892D4B3E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		640FCF0D111E10DE9D35F8CAB929A951 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9B1031C2E1B38557694C88A950E7099D /* Presentr.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Presentr/Presentr-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Presentr/Presentr-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/Presentr/Presentr.modulemap";
+				PRODUCT_MODULE_NAME = Presentr;
+				PRODUCT_NAME = Presentr;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		6AF9D8D0B4F4FA4695A8EEF773CD3FBC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		7416DFEE86F3214552B18BA22789657A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9805F50EDBBE9C3B0AA1975F969365BA /* Pods-StoryboardsAndViewControllers.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-StoryboardsAndViewControllers/Pods-StoryboardsAndViewControllers-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-StoryboardsAndViewControllers/Pods-StoryboardsAndViewControllers.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		DEF88154E120125B45733586BC928806 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 58A86C7959BDA4D695257741FC65D967 /* Pods-StoryboardsAndViewControllers.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-StoryboardsAndViewControllers/Pods-StoryboardsAndViewControllers-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-StoryboardsAndViewControllers/Pods-StoryboardsAndViewControllers.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		FAE8D13FBC89648CA97B93857B9D7DCF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5A23D9161138043641737AF67F9EBA71 /* Presentr.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Presentr/Presentr-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Presentr/Presentr-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/Presentr/Presentr.modulemap";
+				PRODUCT_MODULE_NAME = Presentr;
+				PRODUCT_NAME = Presentr;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		007113D407F2DBADACBA23E0D40E73CE /* Build configuration list for PBXNativeTarget "Presentr" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FAE8D13FBC89648CA97B93857B9D7DCF /* Debug */,
+				640FCF0D111E10DE9D35F8CAB929A951 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				45285987FDC204B9DB7C0228892D4B3E /* Debug */,
+				6AF9D8D0B4F4FA4695A8EEF773CD3FBC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6E8495E2A9FCE37934270EF513A53308 /* Build configuration list for PBXNativeTarget "Pods-StoryboardsAndViewControllers" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7416DFEE86F3214552B18BA22789657A /* Debug */,
+				DEF88154E120125B45733586BC928806 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}

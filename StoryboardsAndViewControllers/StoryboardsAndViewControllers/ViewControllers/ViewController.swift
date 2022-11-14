@@ -7,6 +7,8 @@
 
 import UIKit
 
+import Presentr
+
 class ViewController: UIViewController {
     
     
@@ -14,6 +16,15 @@ class ViewController: UIViewController {
     @IBOutlet weak var textFieldMessage: UITextField!
     @IBOutlet weak var labelMessage: UILabel!
     @IBOutlet weak var button: UIButton!
+    
+    let presenter: Presentr = {
+        let presenter = Presentr(presentationType: .popup)
+        presenter.transitionType = .coverHorizontalFromRight
+        presenter.presentationType = PresentationType.popup
+        return presenter
+    }()
+    
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -27,6 +38,15 @@ class ViewController: UIViewController {
         super.didReceiveMemoryWarning()
     }
     
+    
+    @IBAction func showModal(_ sender: UIButton) {
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let modal = storyboard.instantiateViewController(identifier: "samplemodal")
+        
+        
+        
+        customPresentViewController(presenter, viewController: modal, animated: true)
+    }
     
     @IBAction func changeText(_ sender: UIButton) {
         let message = self.textFieldMessage.text
