@@ -75,7 +75,9 @@ class MainTableViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        print("Selected row \(indexPath.row) from section \(indexPath.section)")
+        //print("Selected row \(indexPath.row) from section \(indexPath.section)")
+        
+        let nectVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(identifier: "details")
     }
     /*
     // Override to support rearranging the table view.
