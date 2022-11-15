@@ -16,14 +16,16 @@ class HttpRequester {
         
         var request = URLRequest(url: url!)
         
+        weak var weakSelf = self
+        
         let dataTask = URLSession.shared.dataTask(with: request, completionHandler:
             { bodyData, response, error in
             do {
                 let body = try JSONSerialization.jsonObject(with: bodyData!, options: .allowFragments)
-                self.delegate?.didReceiveData(data: body)
+                weakSelf?.delegate?.didReceiveData(data: body)
             }
             catch {
-                self.delegate?.didReceiveError(error: error)
+                weakSelf?.delegate?.didReceiveError(error: error)
             }
         })
         

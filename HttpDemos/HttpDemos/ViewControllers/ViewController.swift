@@ -24,7 +24,7 @@ class ViewController: UIViewController, HttpRequesterDelegate {
         let arr = data as! [Any]
         arr.forEach() { (item) in
             let dict = item as! Dictionary<String, Any>
-            print(dict["title"])
+            print(dict["title"] as Any)
         }
     }
     
