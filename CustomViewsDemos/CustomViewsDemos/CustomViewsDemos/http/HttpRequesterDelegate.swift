@@ -8,13 +8,17 @@
 import UIKit
 
 protocol HttpRequesterDelegate {
-    func didReceiveData(data: Any)
-    func didReceiveError(error: Error)
+    func didCompleteGet(result: Data)
+    func didCompletePost(result: Any)
 
 }
 
 extension HttpRequesterDelegate {
-    func didReceiveData(data: Any) {
+    func didCompleteGet(result: Any) {
+        
+    }
+    
+    func didCompletePost(result: Any) {
         
     }
     
