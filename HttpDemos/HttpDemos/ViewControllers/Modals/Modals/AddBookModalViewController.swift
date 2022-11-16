@@ -7,21 +7,30 @@
 
 import UIKit
 
-class AddBookModalViewController: UIViewController {
+protocol AddBookModalDelegate {
+    func didCreateBook(book: Book?)
+}
 
+
+class AddBookModalViewController: UIViewController, HttpRequesterDelegate {
+    
     @IBOutlet weak var textTitle: UITextField!
     @IBOutlet weak var textDescription: UITextView!
     
-    @IBAction func save() {
-        let title = self.textTitle.text
-        let discription = self.textDescription.text
-        print(title)
-        print(description)
-        self.dismiss(animated: true)
+    var delegate: AddBookModalDelegate?
+    
+    var url: String {
+        get{
+            let appDelegate = UIApplication.shared.delegate as! AppDelegate
+            return "\(appDelegate.baseUrl)/books"
+        }
     }
     
-    @IBAction func cancel() {
-        self.dismiss(animated: true)
+    var http: HttpRequester? {
+        get{
+            let appDelegate = UIApplication.shared.delegate as! AppDelegate
+            return appDelegate.http
+        }
     }
     
     
@@ -30,6 +39,32 @@ class AddBookModalViewController: UIViewController {
 
         // Do any additional setup after loading the view.
     }
+    
+    
+    
+    @IBAction func save() {
+        let title = self.textTitle.text
+        let discription = self.textDescription.text
+        
+        let book = Book(withTitle: title!, andDescription: description)
+        let bookDict = book.toDict()
+        
+        self.http?.postJson(toUrl: self.url, withBody: bookDict)
+        
+        
+    }
+    
+    @IBAction func cancel() {
+        self.dismiss(animated: true)
+    }
+    
+    func didReceiveData(data: Any) {
+        self.dismiss(animated: true)
+        self.delegate?.didCreateBook(book: nil)
+    }
+    
+    
+    
     
 
     /*

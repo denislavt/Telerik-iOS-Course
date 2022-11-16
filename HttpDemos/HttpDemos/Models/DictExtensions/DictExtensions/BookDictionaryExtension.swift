@@ -15,4 +15,11 @@ extension Book {
         let bookDescription = dict["description"] as! String
         self.init(withId: id,title: title, andDescription: bookDescription)
     }
+    
+    func toDict() -> Dictionary<String, Any> {
+        return [
+            "title": self.title!,
+            "description": self.bookDescription!
+            ]
+    }
 }

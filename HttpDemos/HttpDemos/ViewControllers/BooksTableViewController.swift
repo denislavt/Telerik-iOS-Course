@@ -8,7 +8,7 @@
 import UIKit
 import Presentr
 
-class BooksTableViewController: UITableViewController, HttpRequesterDelegate {
+class BooksTableViewController: UITableViewController, HttpRequesterDelegate, AddBookModalDelegate {
    
     var books: [Book] = []
     
@@ -32,28 +32,39 @@ class BooksTableViewController: UITableViewController, HttpRequesterDelegate {
             return appDelegate.http
         }
     }
+    
+    func didCreateBook(book: Book?) {
+        self.loadBooks()
+    }
+    
+    
+    func loadBooks () {
+        self.http?.delegate = self
+        self.showLoadingScreen()
+        
+        self.http?.get(fromUrl: self.url)
+        
+        //refresh when the view shows
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        
-        self.http?.delegate = self
-        self.http?.get(fromUrl: self.url)
-        
+    
         
         self.tableView.register(UITableViewCell.self, forCellReuseIdentifier: "book-cell")
-        
         
         //nav +
         self.navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .add,
                                                                  target: self,
                                                                  action: #selector(BooksTableViewController.showAddModal))
-        
+        self.loadBooks()
     }
     
     @objc func showAddModal(){
         let nextVC = UIStoryboard(name: "Main", bundle: nil)
-            .instantiateViewController(withIdentifier: "modal-add-book")
+            .instantiateViewController(withIdentifier: "modal-add-book") as! AddBookModalViewController
+        
+        nextVC.delegate = self
         
         self.customPresentViewController(self.presenter, viewController: nextVC, animated: true)
         //self.present(nextVC, animated: true, completion: nil)
