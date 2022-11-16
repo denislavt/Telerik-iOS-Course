@@ -12,7 +12,7 @@ class BooksTableViewController: UITableViewController, HttpRequesterDelegate {
     
     
     
-    var books: [Dictionary<String, Any>] = []
+    var books: [Book] = []
     
     var url: String {
         get{
@@ -37,15 +37,24 @@ class BooksTableViewController: UITableViewController, HttpRequesterDelegate {
         
         
         self.tableView.register(UITableViewCell.self, forCellReuseIdentifier: "book-cell")
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem
+        
+        
+        //nav +
+        self.navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .add,
+                                                                 target: self,
+                                                                 action: #selector(BooksTableViewController.showAddModal))
+        
+    }
+    
+    @objc func showAddModal(){
+        print("Modal showed")
     }
     
     func didReceiveData(data: Any) {
-        self.books = (data as! [Any]).map(){$0 as! Dictionary<String, Any>}
+        let dataArray = data as! [Dictionary<String, Any>]
+        
+        self.books = dataArray.map(){Book(withDict: $0)}
+        
         self.tableView.reloadData()
     }
     
@@ -69,7 +78,7 @@ class BooksTableViewController: UITableViewController, HttpRequesterDelegate {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
 
-        cell.textLabel?.text = self.books[indexPath.row]["title"] as! String?
+        cell.textLabel?.text = self.books[indexPath.row].title
 
         return cell
     }
