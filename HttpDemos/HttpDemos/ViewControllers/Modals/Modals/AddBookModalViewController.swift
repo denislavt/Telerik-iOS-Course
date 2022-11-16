@@ -9,6 +9,22 @@ import UIKit
 
 class AddBookModalViewController: UIViewController {
 
+    @IBOutlet weak var textTitle: UITextField!
+    @IBOutlet weak var textDescription: UITextView!
+    
+    @IBAction func save() {
+        let title = self.textTitle.text
+        let discription = self.textDescription.text
+        print(title)
+        print(description)
+        self.dismiss(animated: true)
+    }
+    
+    @IBAction func cancel() {
+        self.dismiss(animated: true)
+    }
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 

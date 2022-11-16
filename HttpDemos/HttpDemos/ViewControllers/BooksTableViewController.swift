@@ -6,13 +6,18 @@
 //
 
 import UIKit
+import Presentr
 
 class BooksTableViewController: UITableViewController, HttpRequesterDelegate {
    
-    
-    
-    
     var books: [Book] = []
+    
+    var presenter: Presentr {
+        let presenter = Presentr(presentationType: .popup)
+        presenter.transitionType = .coverHorizontalFromRight
+        return presenter
+    }
+    
     
     var url: String {
         get{
@@ -50,7 +55,8 @@ class BooksTableViewController: UITableViewController, HttpRequesterDelegate {
         let nextVC = UIStoryboard(name: "Main", bundle: nil)
             .instantiateViewController(withIdentifier: "modal-add-book")
         
-        self.present(nextVC, animated: true, completion: nil)
+        self.customPresentViewController(self.presenter, viewController: nextVC, animated: true)
+        //self.present(nextVC, animated: true, completion: nil)
     }
     
     func didReceiveData(data: Any) {

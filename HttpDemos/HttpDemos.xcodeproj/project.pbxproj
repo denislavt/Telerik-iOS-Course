@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		36DC7A06A1E2C8D02C0C86B1 /* Pods_HttpDemos.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C246E363A1F93B756CCAA928 /* Pods_HttpDemos.framework */; };
 		BD60F7272923F2EE005A0B93 /* HttpRequester.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD60F7262923F2EE005A0B93 /* HttpRequester.swift */; };
 		BD60F7292923F767005A0B93 /* HttpRequesterDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD60F7282923F767005A0B93 /* HttpRequesterDelegate.swift */; };
 		BD60F72D2923F9FE005A0B93 /* BooksTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD60F72C2923F9FE005A0B93 /* BooksTableViewController.swift */; };
@@ -23,6 +24,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A0ED21F1CED2964369DCF89C /* Pods-HttpDemos.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HttpDemos.release.xcconfig"; path = "Target Support Files/Pods-HttpDemos/Pods-HttpDemos.release.xcconfig"; sourceTree = "<group>"; };
 		BD60F7262923F2EE005A0B93 /* HttpRequester.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = HttpRequester.swift; path = http/HttpRequester.swift; sourceTree = "<group>"; };
 		BD60F7282923F767005A0B93 /* HttpRequesterDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = HttpRequesterDelegate.swift; path = http/HttpRequesterDelegate.swift; sourceTree = "<group>"; };
 		BD60F72C2923F9FE005A0B93 /* BooksTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BooksTableViewController.swift; sourceTree = "<group>"; };
@@ -38,6 +40,8 @@
 		BDB66EA32923F1AA00ED9562 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BDB66EA62923F1AA00ED9562 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BDB66EA82923F1AA00ED9562 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C246E363A1F93B756CCAA928 /* Pods_HttpDemos.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HttpDemos.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F611B875EB7018EE1D7A4375 /* Pods-HttpDemos.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HttpDemos.debug.xcconfig"; path = "Target Support Files/Pods-HttpDemos/Pods-HttpDemos.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,12 +49,31 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				36DC7A06A1E2C8D02C0C86B1 /* Pods_HttpDemos.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4A11BC85E2D78BB17707F5CF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C246E363A1F93B756CCAA928 /* Pods_HttpDemos.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9D7C06B25D4693DB60975ED3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F611B875EB7018EE1D7A4375 /* Pods-HttpDemos.debug.xcconfig */,
+				A0ED21F1CED2964369DCF89C /* Pods-HttpDemos.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		BD60F7252923F2CC005A0B93 /* Http */ = {
 			isa = PBXGroup;
 			children = (
@@ -109,6 +132,8 @@
 			children = (
 				BDB66E992923F1A800ED9562 /* HttpDemos */,
 				BDB66E982923F1A800ED9562 /* Products */,
+				9D7C06B25D4693DB60975ED3 /* Pods */,
+				4A11BC85E2D78BB17707F5CF /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -143,9 +168,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BDB66EAB2923F1AA00ED9562 /* Build configuration list for PBXNativeTarget "HttpDemos" */;
 			buildPhases = (
+				94EEF28313AF7183E76AA9B4 /* [CP] Check Pods Manifest.lock */,
 				BDB66E932923F1A800ED9562 /* Sources */,
 				BDB66E942923F1A800ED9562 /* Frameworks */,
 				BDB66E952923F1A800ED9562 /* Resources */,
+				D1C8F3F952F9BA23D0A9B7B5 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -201,6 +228,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		94EEF28313AF7183E76AA9B4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HttpDemos-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D1C8F3F952F9BA23D0A9B7B5 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-HttpDemos/Pods-HttpDemos-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-HttpDemos/Pods-HttpDemos-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-HttpDemos/Pods-HttpDemos-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		BDB66E932923F1A800ED9562 /* Sources */ = {
@@ -358,6 +427,7 @@
 		};
 		BDB66EAC2923F1AA00ED9562 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F611B875EB7018EE1D7A4375 /* Pods-HttpDemos.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -387,6 +457,7 @@
 		};
 		BDB66EAD2923F1AA00ED9562 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A0ED21F1CED2964369DCF89C /* Pods-HttpDemos.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
