@@ -10,13 +10,19 @@ import UIKit
 class ImageWithLoading: UIView, HttpRequesterDelegate{
     
     
-
-    var loadingView: UIView?
-    var imageView: UIImageView?
-    var http: HttpRequester?
+    
+    private cache: Dictionary<String, Data>?
+    
+    private var loadingView: UIView?
+    private var imageView: UIImageView?
+    private var http: HttpRequester?
     
     var imageUrl: String? {
         willSet (imageUrl){
+            self.initialize()
+            if(self.cache[imageUrl] != nil){
+                
+            }
             DispatchQueue.main.async {
                 self.loadingView?.isHidden = false
                 self.imageView?.isHidden = true
