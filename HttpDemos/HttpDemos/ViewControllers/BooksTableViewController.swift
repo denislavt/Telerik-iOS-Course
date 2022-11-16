@@ -47,7 +47,10 @@ class BooksTableViewController: UITableViewController, HttpRequesterDelegate {
     }
     
     @objc func showAddModal(){
-        print("Modal showed")
+        let nextVC = UIStoryboard(name: "Main", bundle: nil)
+            .instantiateViewController(withIdentifier: "modal-add-book")
+        
+        self.present(nextVC, animated: true, completion: nil)
     }
     
     func didReceiveData(data: Any) {
