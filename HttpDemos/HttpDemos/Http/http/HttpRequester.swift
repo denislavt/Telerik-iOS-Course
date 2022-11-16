@@ -54,6 +54,10 @@ class HttpRequester {
         self.send(withMethod: "POST", toUrl: urlString, withBody: bodyDict, andHeaders: headers)
     }
     
+    func delete(aturl urlString: String, withHeaders headers: Dictionary<String, String> = [:]) {
+        self.send(withMethod: "DELETE", toUrl: urlString, andHeaders: headers)
+    }
+    
     func postJson(toUrl urlString: String, withBody bodyDict: Dictionary<String, Any>, andHeaders headers: Dictionary<String, String> = [:]){
         var headersWithJson: Dictionary<String, String> = [:]
         headers.forEach(){headersWithJson[$0.key] = $0.value}
