@@ -14,6 +14,7 @@
 		BDAE04232925BB14003986B2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BDAE04222925BB14003986B2 /* Assets.xcassets */; };
 		BDAE04262925BB14003986B2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BDAE04242925BB14003986B2 /* LaunchScreen.storyboard */; };
 		BDAE04302925C111003986B2 /* HttpRequester.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDAE042F2925C111003986B2 /* HttpRequester.swift */; };
+		BDAE043229268E0D003986B2 /* HttpRequesterDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDAE043129268E0D003986B2 /* HttpRequesterDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		BDAE04252925BB14003986B2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BDAE04272925BB14003986B2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BDAE042F2925C111003986B2 /* HttpRequester.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = HttpRequester.swift; path = Http/HttpRequester.swift; sourceTree = "<group>"; };
+		BDAE043129268E0D003986B2 /* HttpRequesterDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpRequesterDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +84,7 @@
 			isa = PBXGroup;
 			children = (
 				BDAE042F2925C111003986B2 /* HttpRequester.swift */,
+				BDAE043129268E0D003986B2 /* HttpRequesterDelegate.swift */,
 			);
 			path = Http;
 			sourceTree = "<group>";
@@ -158,6 +161,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BDAE041B2925BB13003986B2 /* ViewController.swift in Sources */,
+				BDAE043229268E0D003986B2 /* HttpRequesterDelegate.swift in Sources */,
 				BDAE04172925BB13003986B2 /* AppDelegate.swift in Sources */,
 				BDAE04302925C111003986B2 /* HttpRequester.swift in Sources */,
 				BDAE04192925BB13003986B2 /* SceneDelegate.swift in Sources */,
