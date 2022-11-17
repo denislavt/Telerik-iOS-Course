@@ -13,14 +13,14 @@ enum HttpMethod: String {
 }
 
 
-class HttpRequester {
+class HttpRequester: HttpRequesterBase{
     
     var delegate: HttpRequesterDelegate?
     
     func send(withMethod method: HttpMethod,
               toUrl urlString: String,
               withBody body: Any,
-              andHeaders headers: Dictionary<String, String> = [:]){
+              andHeaders headers: Dictionary<String, String>){
         let url = URL(string: urlString)
         
         var request = URLRequest(url: url!)
@@ -73,7 +73,8 @@ class HttpRequester {
     func post(toUrl urlString: String,
               withBody body: Any,
               andHeaders headers: Dictionary<String, String>){
-        self.send(withMethod: .post, toUrl: urlString, withBody: body, andHeaders: headers)
+        let newHeaders: Dictionary<String, String> = headers ?? [:]
+        self.send(withMethod: .post, toUrl: urlString, withBody: body, andHeaders: newHeaders)
     }
     
     func postJson(toUrl urlString: String,
