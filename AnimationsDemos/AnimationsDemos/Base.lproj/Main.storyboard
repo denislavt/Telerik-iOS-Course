@@ -35,11 +35,28 @@
                     </tabBar>
                     <connections>
                         <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="Qfq-nM-2yO"/>
+                        <segue destination="815-4b-fKY" kind="relationship" relationship="viewControllers" id="6af-RB-KAw"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eza-c5-YiO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="101.5267175572519" y="3.5211267605633805"/>
+        </scene>
+        <!--Item-->
+        <scene sceneID="iH7-Sn-egX">
+            <objects>
+                <viewController id="815-4b-fKY" customClass="PopUpViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="h9s-Pt-te7">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="9WS-gv-Rdb"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item" id="fUj-WP-0Xb"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zK7-Em-2kD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="384" y="738"/>
         </scene>
     </scenes>
     <resources>

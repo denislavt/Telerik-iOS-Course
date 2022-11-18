@@ -16,6 +16,7 @@
 		BD9BFBA72927DC20008C712D /* AnimationsDemosTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD9BFBA62927DC20008C712D /* AnimationsDemosTests.swift */; };
 		BD9BFBB12927DC20008C712D /* AnimationsDemosUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD9BFBB02927DC20008C712D /* AnimationsDemosUITests.swift */; };
 		BD9BFBB32927DC20008C712D /* AnimationsDemosUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD9BFBB22927DC20008C712D /* AnimationsDemosUITestsLaunchTests.swift */; };
+		BD9BFBC02927EB29008C712D /* PopUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD9BFBBF2927EB29008C712D /* PopUpViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		BD9BFBAC2927DC20008C712D /* AnimationsDemosUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AnimationsDemosUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BD9BFBB02927DC20008C712D /* AnimationsDemosUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationsDemosUITests.swift; sourceTree = "<group>"; };
 		BD9BFBB22927DC20008C712D /* AnimationsDemosUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationsDemosUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		BD9BFBBF2927EB29008C712D /* PopUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopUpViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +108,7 @@
 				BD9BFB982927DC20008C712D /* Assets.xcassets */,
 				BD9BFB9A2927DC20008C712D /* LaunchScreen.storyboard */,
 				BD9BFB9D2927DC20008C712D /* Info.plist */,
+				BD9BFBBF2927EB29008C712D /* PopUpViewController.swift */,
 			);
 			path = AnimationsDemos;
 			sourceTree = "<group>";
@@ -261,6 +264,7 @@
 				BD9BFB942927DC1F008C712D /* DynamicBehaviourViewController.swift in Sources */,
 				BD9BFB902927DC1F008C712D /* AppDelegate.swift in Sources */,
 				BD9BFB922927DC1F008C712D /* SceneDelegate.swift in Sources */,
+				BD9BFBC02927EB29008C712D /* PopUpViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
